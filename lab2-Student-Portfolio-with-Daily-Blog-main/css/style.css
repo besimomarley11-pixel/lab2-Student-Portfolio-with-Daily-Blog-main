@@ -1,0 +1,331 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+/* Body background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 70%,
+            #ffeaa7,
+            #fab1a0,
+            #d58af0,
+            #464192);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.nav-links ul li a:hover{
+    color: #392341;
+}
+/* Hero Text */
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name{
+    color:#71105a;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+.hero p {
+    font-size: 14px;
+}
+
+/* Subtext */
+.subtext {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Individual Card */
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+}
+
+/* Card Image */
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shadow-frame {
+  border: 5px solid #ffb2ef;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 20%;
+}
+
+/* Button */
+.card button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f8d7da;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #f5b7b1;
+}
+
+/************* Marley's Portfolio Page *************/
+
+/* HEADER */
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #6a0572;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 30px;
+    color: #6a0572;
+    margin-bottom: 20px;
+}
+
+.portfolio-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #6a0572;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.portfolio-btn:hover {
+    background: #9d4edd;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.left img {
+    width: 330px;
+    border-radius: 10px;
+}
+
+.connect {
+    margin-top: 50px;
+}
+
+.connect h3 {
+    color: #6a0572;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 26px;
+    margin-right: 20px;
+    color: #6a0572;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #9d4edd;
+}
+
+.right {
+    max-width: 600px;
+}
+
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #6a0572;
+    font-weight: 700;
+}
+
+/* HOBBY GRID */
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.hobby {
+    background: #6a0572;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.hobby i {
+    font-size: 18px;
+}
+
+.hobby:hover {
+    background: #9d4edd;
+    transform: translateY(-3px);
+}
+
+/* GOALS */
+
+.goals {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+
+/*******************Blog******************/
+/* Container */
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    gap: 200px;
+
+}
+
+/* Blog Section */
+.blog-section {
+    text-align: center;
+}
+
+/* blog title */
+.blog-title {
+    display: inline-block;
+    background-color: #d88fc5;
+    padding: 15px 60px;
+    border-radius: 40px;
+    border: 2px solid black;
+    font-size: 22px;
+    position: relative;
+    box-shadow: 6px 6px 0 black;
+    margin-bottom: 40px;
+}
+
+/* Card */
+.blog-card {
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    background-color: #ffe0e4;
+    border-radius: 5%;
+}
+
+.blog-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    border: 5px solid #ffb2ef;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+/* Card Content */
+.card-content {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.card-content h2 {
+    margin: 5px 0 10px 0;
+}
+
+.card-footer a {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+    font-size: 15px;
+    text-decoration: none;
+    color: blue;
+    text-align: left;
+
+}
+
+.card-footer button {
+    margin-top: 10px;
+    border-radius: 10%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
